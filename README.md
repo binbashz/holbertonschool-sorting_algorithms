@@ -13,7 +13,7 @@ The Sort() method accepts an array parameter and arranges its elements in descen
 SORTING: Searching Linear search or sequential search Binary search Interpolation search to sorting External sorting
 
 
-What is Sorting?
+#### What is Sorting?
 
 Sorting in c is the processing of arranging the data in ascending and descending order.
 There are several types of sorting in data structures, namely – bubble sort, insertion sort, selection sort, bucket sort, heap sort, quick sort, radix sort, etc.
@@ -27,8 +27,8 @@ What is sorting? Sorting in c is the process of arranging data into meaningful o
 
 
 
-Bubble sort (or) Exchange Sort.
-Selection sort.
-Insertion sort (or) Linear sort.
-Quick sort (or) Partition exchange sort.
-Merge Sort (or) External sort.
+- Bubble sort (or) Exchange Sort.
+- Selection sort.
+- Insertion sort (or) Linear sort.
+- Quick sort (or) Partition exchange sort.
+- Merge Sort (or) External sort.
