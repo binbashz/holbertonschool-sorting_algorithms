@@ -1,10 +1,10 @@
 
 /**
- * bubble_sort - Sorts an array of integers in ascending order 
+ * buuble_sort -  Sorts an array of integers in ascending order
  *
  * @array: the array to be sorted
  * @size: number of elements in array
- */
+ **/
 
 #include "sort.h"
 
