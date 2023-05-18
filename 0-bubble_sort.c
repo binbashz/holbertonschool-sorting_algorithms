@@ -18,7 +18,7 @@
 		
 	else
 	{
-	tmp = array[index];
+	temp = array[index];
 	array[index] = array[index + 1];
 	print_array(array, size);
 	}
