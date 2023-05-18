@@ -1,6 +1,6 @@
 
 /**
- * buuble_sort -  Sorts an array of integers in ascending order
+ * bubble_sort -  Sorts an array of integers in ascending order
  *
  * @array: the array to be sorted
  * @size: number of elements in array
@@ -11,7 +11,7 @@
 
 
 
-	void buuble_sort(int *array, size_t size)
+	void bubble_sort(int *array, size_t size)
 {
 	int temp = 0;
 	size_t index, verify;
