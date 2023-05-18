@@ -35,5 +35,12 @@ through its arguments and a few simple operations on the data.
 
 What is sorting? Sorting in c is the process of arranging data into meaningful order so that you can analyze it more effectively.
 
+--------------------------------------------------------------------------------------------------------
 
+#### Bubble sorting
+Sorting an array in C using the bubble method is simple; we simply step through the array in a for cycle, and within that cycle, we do another cycle; that is, we have two cycles.
+
+In the second cycle (which goes from 0 to the length of the array minus the step of the first cycle) we compare the current element with the next one, and if the current one is larger, we exchange the values.
+
+This is repeated and at the end the array will be sorted.
 
