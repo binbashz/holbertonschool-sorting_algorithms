@@ -13,7 +13,7 @@
 		verify = 0;
 		for (i = 0; i < size - 1; index++)
 	{
-	if (array[index] => array[index] + 1)
+	if (array[index] <= array[index + 1])
 	verify++;
 		
 	else
