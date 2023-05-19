@@ -18,7 +18,6 @@ The Sort() method accepts an array parameter and arranges its elements in descen
 
 #### What is Sorting?
 
-Sorting in c is the processing of arranging the data in ascending and descending order.
 There are several types of sorting in data structures, namely – 
 - bubble sort, 
 - insertion sort, 
@@ -37,10 +36,19 @@ What is sorting? Sorting in c is the process of arranging data into meaningful o
 
 --------------------------------------------------------------------------------------------------------
 
-#### Bubble sorting
+#### - Bubble sort
 Sorting an array in C using the bubble method is simple; we simply step through the array in a for cycle, and within that cycle, we do another cycle; that is, we have two cycles.
 
 In the second cycle (which goes from 0 to the length of the array minus the step of the first cycle) we compare the current element with the next one, and if the current one is larger, we exchange the values.
 
 This is repeated and at the end the array will be sorted.
+
+
+#### - Insertion sort 
+Insertion sort is a very natural way of sorting for a human being, and can easily be used to sort a deck of arbitrarily numbered cards. It requires O(n²) operations to sort a list of n elements.
+
+Initially you have a single element, which is obviously an ordered set. Then, when there are k elements sorted from smallest to largest, one takes the k+1 element and compares it with all the elements already sorted, stopping when a smaller element is found (all the larger elements have been shifted one position to the right) or when no elements are found (all the elements were shifted and this is the smallest). At this point the k+1 element is inserted and the other elements must be shifted.
+
+
+![insertion sort](https://github.com/binbashz/holbertonschool-sorting_algorithms/assets/124454895/758f05d1-4336-4e83-85f0-810c4685ada6)
 
