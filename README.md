@@ -61,4 +61,5 @@ The smallest element is selected from the unsorted array and swapped with the le
 
 
 This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(n2), where n is the number of items.
+
 ![selection sort](https://github.com/binbashz/holbertonschool-sorting_algorithms/assets/124454895/04182a4f-835f-4a3b-9f22-1667f5784201)
