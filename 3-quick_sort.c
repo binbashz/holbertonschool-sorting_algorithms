@@ -67,7 +67,7 @@ int part(int *array, size_t size, int min, int max)
 }
 
 /**
- * swap - Swaps two integer values.
+ * swap - Swap two integer values.
  *
  * @array: Pointer to the array.
  * @size: Size of the array (number of elements).
