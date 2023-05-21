@@ -5,39 +5,32 @@
  */
 
 #include "sort.h"
-
 void insertion_sort_list(listint_t **list)
 {
-	/* Initial check for empty list or single element */
-	if (list == NULL || *list == NULL || (*list)->next == NULL)
-	return;
+	listint_t *current = NULL;
 
-	listint_t *current = (*list)->next; /* Points to the second node of th list */
+	if (!list || !(*list))
+		return;
 
-	while (current != NULL)
+	for (current = *list; current; current = current->next)
 	{
-	listint_t *insertion_point = current->prev; /* Initial insertion point */
-	int value = current->n; /* Value of the current node */
+		while (current->prev && current->prev->n > current->n)
+		{
+			listint_t *insertion_point = current->prev;
+			listint_t *temp_next = current->next;
+			listint_t *temp_prev_prev = current->prev->prev;
 
-	/* Shifting the nodes in the sorted part to the right */
-	while (insertion_point != NULL && insertion_point->n > value)
-	{
-	insertion_point->next = insertion_point;
-	insertion_point = insertion_point->prev;
-	}
-
-	/* Inserting the current node at its correct position */
-	if (insertion_point == NULL)
-	{
-		(*list)->next = (*list);
-	}
-	else
-	{
-		insertion_point->next = current;
-	}
-
-	print_list(*list); /* Print the list after each iteration */
-
-	current = current->next; /* Move to the next node */
+			insertion_point->next = temp_next;
+			if (temp_next)
+				temp_next->prev = insertion_point;
+			current->next = insertion_point;
+			current->prev = temp_prev_prev;
+			insertion_point->prev = current;
+			if (temp_prev_prev)
+				temp_prev_prev->next = current;
+			else
+				*list = current;
+			print_list(*list);
+		}
 	}
 }
