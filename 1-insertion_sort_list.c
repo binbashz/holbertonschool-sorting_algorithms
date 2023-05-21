@@ -22,18 +22,18 @@ void insertion_sort_list(listint_t **list)
 	/* Shifting the nodes in the sorted part to the right */
 	while (insertion_point != NULL && insertion_point->n > value)
 	{
-	insertion_point->next->n = insertion_point->n;
+	insertion_point->next = insertion_point;
 	insertion_point = insertion_point->prev;
 	}
 
 	/* Inserting the current node at its correct position */
 	if (insertion_point == NULL)
 	{
-		(*list)->n = value; /* The current node becomes the first node of the list */
+		(*list)->next = (*list);
 	}
 	else
 	{
-		insertion_point->next->n = value;
+		insertion_point->next = current;
 	}
 
 	print_list(*list); /* Print the list after each iteration */
